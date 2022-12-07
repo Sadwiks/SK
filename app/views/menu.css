@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.background-container{
+    background-size: cover;
+    margin: 10px;
+    
+}
+.hotdrinks-container{
+    background-image: url("https://img.freepik.com/free-photo/vertical-shot-hot-coffee-with-waffles_181624-43126.jpg?w=360&t=st=1670342768~exp=1670343368~hmac=ce9edc7869eb1241d6b9a6aacf648b54c4e3b19d6ab691f50745c1e9a464a724");
+    color: white;
+    font-style: Monoton;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+     height: 47vh;
+    width: 100vw;
+    padding: 130px;
+    margin: 10px;
+    
+    
+    
+}
+.food-container{
+    background-image: url("https://img.freepik.com/free-photo/fresh-french-croissants-tablecloth_144627-4433.jpg?w=996&t=st=1670343467~exp=1670344067~hmac=1e22c52cfc8628f58d4a4def4d1a03005eb72f31a76067ff1f9c299c9798deef");
+    color: white;
+    font-style: Monoton;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+    height: 47vh;
+    width: 100vw;
+    padding: 130px;
+    background-size: cover;
+    margin: 10px;
+}
+.button{
+    background-color: black;
+    color: white;
+    margin: 6px;
+    width: 50vw;
+    border-radius: 15px;
+}
+.head {
+    color: black;
+}
