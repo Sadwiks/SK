@@ -15,19 +15,23 @@ const db = require('./services/db');
 
 // Create a route for root - /
 app.get("/", function(req, res) {
-    res.render("cart");
+    res.render("menu");
 });
 
 app.get("/1", function(req, res) {
     res.render("food");
 });
 
-app.get("/2", function(req, res) {
-    res.render("hotdrinks");
+app.get("/hotdrinks", function(req, res) {
+    sql = "SELECT * FROM hotdrink ";
+    db.query(sql).then(resul =>{
+        res.render("hotdrinks", {data: resul})
+    })
 });
 
 app.get("/3", function(req, res) {
-    res.render("menu");
+    
+    res.render("cart");
 });
 
 app.get("/4", function(req, res) {
@@ -36,12 +40,12 @@ app.get("/4", function(req, res) {
 
 
 // Create a route for testing the db
-app.get("/12", function(req, res) {
+app.get("/food", function(req, res) {
     // Assumes a table called test_table exists in your database
-    sql = 'select * from food';
+    sql = 'select * from foods';
     db.query(sql).then(results => {
         console.log(results);
-        res.send(results)
+        res.render("food",{values:results})
     });
 });
 
